@@ -1,0 +1,76 @@
+body,
+html,
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 916px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &.btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
+
+    &.btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+        border-color: #dc3545;
+    }
+
+    &.btn-delete {
+        background-color: #e91e63;
+        color: #fff;
+        border-color: #e91e63;        
+    }
+
+    &.btn-success {
+        background-color: #28a745;
+        color: #fff;
+        border-color: #28a745;        
+    }
+
+    &:disabled {
+        background-color: #ddd;
+        color: #000;
+        border-color: #ddd;
+        cursor: not-allowed;
+    }
+
+    .btn-rounded {
+        border-radius: 50%;
+    }
+}
+
+.pagination-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}

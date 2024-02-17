@@ -1,0 +1,29 @@
+
+.table-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+
+        tr {
+            &.selected {
+                background-color: #ddd;
+            }
+        }
+
+        td, th {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .no-data-found {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    }
+}
